@@ -2,6 +2,10 @@
 
 Creates apps for the Sharp MZ-800 from binary files. It can create MZT tape files or WAV audio files.
 
+## Example
+
+`swift run MZAppMake --input HelloWorld.bin --load 0x2000 --start 0x2000`
+
 ## Usage
 
 ```
@@ -17,3 +21,4 @@ mz-app-make --input <input> [--input-as-tape] [--load <load>] [--start <start>] 
 | `--audio`         | Create WAV file. (default: `false`)                                  |
 | `--fast`          | Using fast mode when creating `WAV` file. (default: `false`)         |
 | `-h`, `--help`    | Show help information.                                               |
+
